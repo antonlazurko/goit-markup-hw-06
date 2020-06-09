@@ -252,10 +252,18 @@ img {
   flex-direction: column;
 }
 /* css для формі подписки */
-.forma {
+.subscribe > .forma {
   display: flex;
   flex-direction: column;
   margin-left: 102px;
+}
+.subscribe.forma > b {
+  color: var(--white-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .forma-field {
   display: flex;
@@ -289,12 +297,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
   width: 200px;
   height: 50px;
+  margin-left: 12px;
   box-sizing: border-box;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-weight: 900;
@@ -302,27 +309,17 @@ img {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
-  background-color: rgba(255, 255, 255, 0);
-  color: var(--secondary-white-color);
-}
-.input-button--submit:hover,
-.input-button--submit:focus {
   background-color: var(--accent-color);
   color: var(--white-text-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .plane {
-  fill: var(--secondary-white-color);
-  margin-left: 10px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.input-button--submit:hover > .plane,
-.input-button--submit:focus > .plane {
   fill: #ffffff;
+  background-color: var(--accent-color);
+  margin-left: 10px;
 }
+
 .subscribe {
-  display: flex;
   color: var(--white-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -333,7 +330,7 @@ img {
 .copyright {
   padding-top: 18px;
   padding-bottom: 21px;
-  border-top: 1px solid var(--secondary-white-color);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: var(--secondary-text-color);
   font-size: 12px;
   line-height: 2;
