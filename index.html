@@ -552,7 +552,65 @@
     <!-- Делает серый фон -->
     <div class="backdrop is-hidden" data-backdrop>
       <div class="modal">
-        <button data-close-modal>Close</button>
+        <form class="form">
+          <b>Оставьте свои данные, мы вам перезвоним</b>
+          <ul class="form-list list rule">
+            <li class="form-field">
+              <label class="form-label" for="name"></label>
+              <input
+                class="form-input"
+                type="text"
+                name="name"
+                id="name"
+                autofocus
+                placeholder="Имя"
+              />
+            </li>
+            <li class="form-field">
+              <label class="form-label" for="tel"></label>
+              <input
+                class="form-input"
+                type="tel"
+                name="tel"
+                id="tel"
+                placeholder="Телефон"
+              />
+            </li>
+            <l class="form-field">
+              <label class="form-label" for="mail"></label>
+              <input
+                class="form-input"
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="Почта"
+              />
+            </l>
+            <li class="form-field">
+              <label class="form-label" for="comment"></label>
+              <textarea
+                class="form-input"
+                name="comment"
+                id="comment"
+                placeholder="Комментарий"
+              ></textarea>
+            </li>
+          </ul>
+          <div class="form-field">
+            <input type="checkbox" name="policy" id="policy" />
+            <label for="policy" class="policy"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="#" class="agreement">Условия договора</a></label
+            >
+          </div>
+
+          <button type="submit" class="button hero-button">Отправить</button>
+        </form>
+        <button class="modal-close-button" data-close-modal>
+          <svg class="modal-close-button-icon" width="18" height="18">
+            <use href="./images/symbol-defs.svg#close-black"></use>
+          </svg>
+        </button>
       </div>
     </div>
     <!-- <script src="./js/modal.js"></script> -->
