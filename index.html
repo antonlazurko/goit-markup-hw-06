@@ -551,7 +551,7 @@
     <!-- Делает бэкдроп и модальное окно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <form class="form">
+        <form class="form js-speaker-form">
           <b>Оставьте свои данные, мы вам перезвоним</b>
           <ul class="form-list list rule">
             <li class="form-field">
@@ -561,7 +561,6 @@
                 type="text"
                 name="name"
                 id="name"
-                autofocus
                 placeholder="Имя"
               />
             </li>
@@ -573,6 +572,7 @@
                 name="tel"
                 id="tel"
                 placeholder="Телефон"
+                autofocus
               />
             </li>
             <li class="form-field">
