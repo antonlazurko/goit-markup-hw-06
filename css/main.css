@@ -334,11 +334,7 @@
   margin-right: 0;
 }
 .work-list .item:hover,
-.work-list .item:focus
-/* .work-list .item:hover .text.text-descriprion,
-.work-list .item:focus .text.text-descriprion,
-.work-list .item:hover > .card-description::before,
-.work-list .item:focus > .card-description::before  */ {
+.work-list .item:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
 }
@@ -392,7 +388,7 @@
   transform: translateY(0);
   opacity: 1;
 }
-
+/* CSS для модального окна и бєкдропа */
 .backdrop {
   position: fixed;
   top: 0;

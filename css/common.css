@@ -285,6 +285,7 @@ img {
   font-weight: 400;
   color: var(--secondary-white-color);
   font-size: 16px;
+  outline: none;
   line-height: 1.9;
   letter-spacing: 0.03em;
   box-sizing: border-box;
